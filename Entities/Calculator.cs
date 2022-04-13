@@ -18,24 +18,30 @@ class Calculator
 
     public void Calculation()
     {
-        if (PlayerOne > PlayerTwo)
-        {
-          Console.WriteLine("\nOdds:");
-          Console.WriteLine("Player one: " + (PlayerOne / PlayerTwo).ToString("F2"));
-          Console.WriteLine("Player two: 1.00");
-        }
-        else if (PlayerOne < PlayerTwo)
-        {
-          Console.WriteLine("\nOdds:");
-          Console.WriteLine("Player one: 1.00");
-          Console.WriteLine("Player two: " + (PlayerTwo / PlayerOne).ToString("F2"));
+      Console.Clear();
+      if (PlayerOne > PlayerTwo)
+      {
+        Console.WriteLine("\nOdds:");
+        Console.WriteLine("Player one: " + (PlayerOne / PlayerTwo).ToString("F2"));
+        Console.WriteLine("Player two: 1.00");
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("\nOdds in favor of player one!");
+      }
+      else if (PlayerOne < PlayerTwo)
+      {
+        Console.WriteLine("\nOdds:");
+        Console.WriteLine("Player one: 1.00");
+        Console.WriteLine("Player two: " + (PlayerTwo / PlayerOne).ToString("F2"));
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("\nOdds in favor of player two!");
         }
       else
       {
-          Console.WriteLine("\nOdds:");
-          Console.Write("Player one: 1");
-          Console.Write("Player two: 1");
+        Console.WriteLine("\nOdds:");
+        Console.WriteLine("Player one: 1");
+        Console.WriteLine("Player two: 1");
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("\nEqual odds!");        
       }
     }
-
 }
