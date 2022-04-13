@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/DJYkJczWgwOxYzfg6+bgj2lw1HiE4teCgiVh1JXTMdteDux0ZcLIQB508ErXnQULLu/cPSMYJIV7uOhTw411Q==",
+  "dgSpecHash": "XwdiV3sgb4IbH9O1W8Ki7gZs1YPleSyrKPMQ2XvpcjF/hKLU95+vnGwrRLS10rd+3ArmUsw64QIZxVGQpVesEw==",
   "success": true,
-  "projectFilePath": "/home/runner/CSharp/main.csproj",
+  "projectFilePath": "/home/runner/OddsCalculator/main.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
